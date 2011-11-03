@@ -1,3 +1,9 @@
+# revision 21499
+# category Package
+# catalog-ctan /graphics/metapost/contrib/macros/drv
+# catalog-date 2011-02-22 19:59:57 +0100
+# catalog-license lppl
+# catalog-version 0.97
 Name:		texlive-drv
 Version:	0.97
 Release:	1
@@ -55,6 +61,7 @@ these macros.
 %doc %{_texmfdistdir}/doc/metapost/drv/template/readme.sh
 %doc %{_texmfdistdir}/doc/metapost/drv/template/template.mp
 %doc %{_texmfdistdir}/doc/metapost/drv/template/template.tex
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -65,3 +72,5 @@ these macros.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar metapost doc %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}

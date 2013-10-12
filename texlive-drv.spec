@@ -1,12 +1,12 @@
-# revision 21499
+# revision 29349
 # category Package
 # catalog-ctan /graphics/metapost/contrib/macros/drv
-# catalog-date 2011-02-22 19:59:57 +0100
+# catalog-date 2012-07-03 17:35:36 +0200
 # catalog-license lppl
 # catalog-version 0.97
 Name:		texlive-drv
 Version:	0.97
-Release:	2
+Release:	3
 Summary:	Derivation trees with MetaPost
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/graphics/metapost/contrib/macros/drv
@@ -62,17 +62,3 @@ these macros.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar metapost doc %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 0.97-2
-+ Revision: 751095
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 0.97-1
-+ Revision: 718265
-- texlive-drv
-- texlive-drv
-- texlive-drv
-- texlive-drv
-

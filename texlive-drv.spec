@@ -6,7 +6,7 @@
 # catalog-version 0.97
 Name:		texlive-drv
 Version:	0.97
-Release:	7
+Release:	8
 Summary:	Derivation trees with MetaPost
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/graphics/metapost/contrib/macros/drv

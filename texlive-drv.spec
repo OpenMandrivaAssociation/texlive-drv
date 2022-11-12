@@ -1,18 +1,12 @@
-# revision 29349
-# category Package
-# catalog-ctan /graphics/metapost/contrib/macros/drv
-# catalog-date 2012-07-03 17:35:36 +0200
-# catalog-license lppl
-# catalog-version 0.97
 Name:		texlive-drv
-Version:	0.97
-Release:	12
+Version:	29349
+Release:	1
 Summary:	Derivation trees with MetaPost
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/graphics/metapost/contrib/macros/drv
 License:	LPPL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/drv.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/drv.doc.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/drv.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/drv.doc.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -25,12 +19,12 @@ language semantics...). No MetaPost knowledge is needed to use
 these macros.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -55,7 +49,7 @@ these macros.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1
+%autosetup -p1 -c -a1
 
 %build
 

@@ -1,6 +1,6 @@
 Name:		texlive-drv
 Version:	29349
-Release:	1
+Release:	2
 Summary:	Derivation trees with MetaPost
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/graphics/metapost/contrib/macros/drv

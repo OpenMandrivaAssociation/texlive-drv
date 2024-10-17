@@ -3,7 +3,7 @@ Version:	29349
 Release:	2
 Summary:	Derivation trees with MetaPost
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/graphics/metapost/contrib/macros/drv
+URL:		https://www.ctan.org/tex-archive/graphics/metapost/contrib/macros/drv
 License:	LPPL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/drv.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/drv.doc.r%{version}.tar.xz
